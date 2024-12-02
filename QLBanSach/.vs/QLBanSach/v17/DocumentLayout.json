@@ -1,0 +1,265 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\QLBanSach\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|c:\\users\\user\\source\\repos\\qlbansach\\gui\\formcustomer\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|solutionrelative:gui\\formcustomer\\diachi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D1BAD11-1E20-4D7E-AA84-3FBFCE8AD226}|DTO\\DTO.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\dto\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D1BAD11-1E20-4D7E-AA84-3FBFCE8AD226}|DTO\\DTO.csproj|solutionrelative:dto\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\gui\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|solutionrelative:gui\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|solutionrelative:gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C4A4F6D-5D9C-4F00-ACC2-197B5A1661FE}|DAL\\DAL.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\dal\\registeraccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C4A4F6D-5D9C-4F00-ACC2-197B5A1661FE}|DAL\\DAL.csproj|solutionrelative:dal\\registeraccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\gui\\formcustomer\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|solutionrelative:gui\\formcustomer\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\gui\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|solutionrelative:gui\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\gui\\formcustomer\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|solutionrelative:gui\\formcustomer\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C4A4F6D-5D9C-4F00-ACC2-197B5A1661FE}|DAL\\DAL.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\dal\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C4A4F6D-5D9C-4F00-ACC2-197B5A1661FE}|DAL\\DAL.csproj|solutionrelative:dal\\userregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81E23197-2DE6-4B8F-9B6E-B8253FBC4A58}|BLL\\BLL.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\bll\\registerbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81E23197-2DE6-4B8F-9B6E-B8253FBC4A58}|BLL\\BLL.csproj|solutionrelative:bll\\registerbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C4A4F6D-5D9C-4F00-ACC2-197B5A1661FE}|DAL\\DAL.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\dal\\connectaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C4A4F6D-5D9C-4F00-ACC2-197B5A1661FE}|DAL\\DAL.csproj|solutionrelative:dal\\connectaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\gui\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|solutionrelative:gui\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|solutionrelative:gui\\dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|C:\\Users\\User\\source\\repos\\QLBanSach\\gui\\formcustomer\\trangchu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52B2C338-2462-4CBF-B420-0827EB2584CE}|GUI\\GUI.csproj|solutionrelative:gui\\formcustomer\\trangchu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 281,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DiaChi.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\FormCustomer\\DiaChi.cs",
+              "RelativeDocumentMoniker": "GUI\\FormCustomer\\DiaChi.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\FormCustomer\\DiaChi.cs [Design]",
+              "RelativeToolTip": "GUI\\FormCustomer\\DiaChi.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:58:11.138Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DangKy.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\DangKy.cs",
+              "RelativeDocumentMoniker": "GUI\\DangKy.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\DangKy.cs [Design]",
+              "RelativeToolTip": "GUI\\DangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T13:38:50.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NguoiDung.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\DTO\\NguoiDung.cs",
+              "RelativeDocumentMoniker": "DTO\\NguoiDung.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\DTO\\NguoiDung.cs",
+              "RelativeToolTip": "DTO\\NguoiDung.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T13:40:25.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DangKy.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\DangKy.cs",
+              "RelativeDocumentMoniker": "GUI\\DangKy.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\DangKy.cs",
+              "RelativeToolTip": "GUI\\DangKy.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwDsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T14:01:34.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TrangChu.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\FormCustomer\\TrangChu.cs",
+              "RelativeDocumentMoniker": "GUI\\FormCustomer\\TrangChu.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\FormCustomer\\TrangChu.cs",
+              "RelativeToolTip": "GUI\\FormCustomer\\TrangChu.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:50:22.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TrangChu.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\FormCustomer\\TrangChu.Designer.cs",
+              "RelativeDocumentMoniker": "GUI\\FormCustomer\\TrangChu.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\FormCustomer\\TrangChu.Designer.cs",
+              "RelativeToolTip": "GUI\\FormCustomer\\TrangChu.Designer.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAJ8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T05:12:15.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "GUI\\Properties\\Resources.resx",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\Properties\\Resources.resx",
+              "RelativeToolTip": "GUI\\Properties\\Resources.resx",
+              "ViewState": "AgIAAAAAAAAA8fWjwoEmwJYAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-11-22T05:11:49.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConnectAccess.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\DAL\\ConnectAccess.cs",
+              "RelativeDocumentMoniker": "DAL\\ConnectAccess.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\DAL\\ConnectAccess.cs",
+              "RelativeToolTip": "DAL\\ConnectAccess.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAADEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:23:44.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TrangChu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\FormCustomer\\TrangChu.cs",
+              "RelativeDocumentMoniker": "GUI\\FormCustomer\\TrangChu.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\FormCustomer\\TrangChu.cs [Design]",
+              "RelativeToolTip": "GUI\\FormCustomer\\TrangChu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T14:21:52.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\DangNhap.cs",
+              "RelativeDocumentMoniker": "GUI\\DangNhap.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\DangNhap.cs",
+              "RelativeToolTip": "GUI\\DangNhap.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAADgv0MAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T13:08:55.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DangNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\DangNhap.cs",
+              "RelativeDocumentMoniker": "GUI\\DangNhap.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\DangNhap.cs [Design]",
+              "RelativeToolTip": "GUI\\DangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T13:08:39.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\Program.cs",
+              "RelativeDocumentMoniker": "GUI\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\GUI\\Program.cs",
+              "RelativeToolTip": "GUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T13:08:11.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserRegister.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\DAL\\UserRegister.cs",
+              "RelativeDocumentMoniker": "DAL\\UserRegister.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\DAL\\UserRegister.cs",
+              "RelativeToolTip": "DAL\\UserRegister.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T15:37:13.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterBLL.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\BLL\\RegisterBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\RegisterBLL.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\BLL\\RegisterBLL.cs",
+              "RelativeToolTip": "BLL\\RegisterBLL.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T15:20:41.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterAccess.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\QLBanSach\\DAL\\RegisterAccess.cs",
+              "RelativeDocumentMoniker": "DAL\\RegisterAccess.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\QLBanSach\\DAL\\RegisterAccess.cs",
+              "RelativeToolTip": "DAL\\RegisterAccess.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAswCcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T14:28:16.659Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
