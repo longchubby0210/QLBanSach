@@ -18,3 +18,4 @@ C:\Users\User\source\repos\QLBanSach\GUI\bin\Debug\DAL.pdb
 C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.DangKy.resources
 C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormCustomer.TrangChu.resources
 C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormCustomer.DiaChi.resources
+C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormMaster.QuanTri.resources

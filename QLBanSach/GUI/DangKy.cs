@@ -39,13 +39,13 @@ namespace GUI
                 comboGioiTinh.SelectedIndex = 1;
             string CheckRegister = DKBLL.CheckRegister(user);
             CheckRegister = CheckRegister.Trim();
-
-            string[] ns = dtpNgaySinh.Text.Split('/');
-            dtpNgaySinh.Value = new DateTime(int.Parse(ns[2]), int.Parse(ns[0]), int.Parse(ns[1]));
+            string ngaySinh = dtpNgaySinh.Value.Year + "-" + dtpNgaySinh.Value.Month +"-"+dtpNgaySinh.Value.Day;
+            //string[] ns = dtpNgaySinh.Text.Split('/');
+            //dtpNgaySinh.Value = new DateTime(int.Parse(ns[2]), int.Parse(ns[0]), int.Parse(ns[1]));---
             user.Username = txtUsername.Text;
-            user.Password = txtpassword.Text;
+            user.Pass = txtpassword.Text;
             user.HoVaTen = txtFullname.Text;
-            user.NamSinh = dtpNgaySinh.Value;
+            user.NamSinh = DateTime.Parse(ngaySinh);
             user.GioiTinh = comboGioiTinh.Text;
             user.DiaChi = txtDiaChi.Text;
             user.SoDienThoai = txtSoDienThoai.Text;
@@ -65,6 +65,7 @@ namespace GUI
                 
                 case "register_access":
                     {
+                            XoaDuLieu();
                        DialogResult result = MessageBox.Show("Đăng ký tài khoản thành công!");
                         MessageBox.Show("Bạn có muốn trở lại trang đăng nhập không",
                             "Hỏi Thoát",
@@ -72,8 +73,9 @@ namespace GUI
                         MessageBoxIcon.Question);
                             if(result == DialogResult.Yes)
                             {
-                                Close();
+                                this.Close();
                             }
+                                
                         return;
                     }
                 case "register_retail":
@@ -99,5 +101,14 @@ namespace GUI
             this.Close();
         }
 
+        //Sự kiện xóa dữ liệu khi người dùng đăng ký tài khoản thành công
+        private void XoaDuLieu()
+        {
+            txtUsername.Clear();
+            txtpassword.Clear();
+            txtFullname.Clear();
+            txtDiaChi.Clear();
+            txtSoDienThoai.Clear();
+        }
     }
 }

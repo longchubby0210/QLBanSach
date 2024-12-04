@@ -18,7 +18,7 @@ namespace BLL
         {
             
             //Kiểm tra thông tin người dùng nhập vào hay chưa
-            if(taiKhoan.Username == "" || taiKhoan.Password == "" || taiKhoan.HoVaTen == "" 
+            if(taiKhoan.Username == "" || taiKhoan.Pass == "" || taiKhoan.HoVaTen == "" 
                 || taiKhoan.GioiTinh == "" || taiKhoan.DiaChi == "" || taiKhoan.SoDienThoai == "")
             {
                 return "Bạn chưa điền đầy đủ thông tin!";

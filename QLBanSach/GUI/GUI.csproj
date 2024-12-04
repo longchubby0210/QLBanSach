@@ -64,11 +64,41 @@
     <Compile Include="FormCustomer\DiaChi.Designer.cs">
       <DependentUpon>DiaChi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCustomer\GioHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\GioHang.Designer.cs">
+      <DependentUpon>GioHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer\LichSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\LichSu.Designer.cs">
+      <DependentUpon>LichSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer\ThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\ThongTinCaNhan.Designer.cs">
+      <DependentUpon>ThongTinCaNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCustomer\TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormCustomer\TrangChu.Designer.cs">
       <DependentUpon>TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaster\QuanTri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaster\QuanTri.Designer.cs">
+      <DependentUpon>QuanTri.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormCustomer\TrangChu.resx">
       <DependentUpon>TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMaster\QuanTri.resx">
+      <DependentUpon>QuanTri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,7 +157,6 @@
     <None Include="Resources\book_login.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FormMaster\" />
     <Folder Include="Image\Book\" />
     <Folder Include="Image\Logo\" />
   </ItemGroup>
@@ -151,6 +183,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hello_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usermaster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_mng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info_account.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

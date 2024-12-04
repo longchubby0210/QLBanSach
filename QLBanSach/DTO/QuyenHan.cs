@@ -8,7 +8,7 @@ namespace DTO
 {
     public class QuyenHan
     {
-        public string MaQuyen {  get; set; }
+        public int MaQuyen {  get; set; }
         public string TenQuyen { get; set; }
     }
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Data;
 
 using DTO;
+using System.Runtime.Remoting.Messaging;
 
 namespace DAL
 {
@@ -39,7 +40,7 @@ namespace DAL
             SqlCommand cmd = new SqlCommand("proc_checklogin", sqlCon);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@user",taikhoan.Username);
-            cmd.Parameters.AddWithValue("@pass",taikhoan.Password);
+            cmd.Parameters.AddWithValue("@pass",taikhoan.Pass);
 
             //Kiểm tra quyền
             cmd.Connection = sqlCon;
@@ -49,8 +50,14 @@ namespace DAL
             {
                 while (dataReader.Read())
                 {
+                    if (!dataReader.IsDBNull(3)) 
+                    {
+                        int maQuyen = dataReader.GetInt32(3); // Lấy MaQuyen từ CSDL
+                        taikhoan.setMaQuyen(maQuyen); // Gán giá trị vào đối tượng user
+                    }; 
+
                     //Thêm if để kiểm tra null vì MaND là int 
-                    if (!dataReader.IsDBNull(0))
+                    if (!dataReader.IsDBNull(1))
                     {
                         user = dataReader[0].ToString(); // Sử dụng ToString()
                         return user;

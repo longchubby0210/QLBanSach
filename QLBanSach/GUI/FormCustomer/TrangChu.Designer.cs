@@ -31,24 +31,26 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btnAddress = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnAccount = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnHistory = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btnCart = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.picLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblHeaderUser = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnExit = new System.Windows.Forms.Button();
-            this.btnAddress = new System.Windows.Forms.Button();
-            this.btnAccount = new System.Windows.Forms.Button();
-            this.btnHistory = new System.Windows.Forms.Button();
-            this.btnCart = new System.Windows.Forms.Button();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.picLogo = new System.Windows.Forms.PictureBox();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -57,11 +59,11 @@
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -88,6 +90,22 @@
             this.panel9.Size = new System.Drawing.Size(170, 59);
             this.panel9.TabIndex = 6;
             // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Image = global::GUI.Properties.Resources.logout;
+            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnExit.Size = new System.Drawing.Size(170, 59);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Th&oát";
+            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnExit.UseVisualStyleBackColor = false;
+            // 
             // panel8
             // 
             this.panel8.Controls.Add(this.btnAddress);
@@ -96,6 +114,23 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(170, 59);
             this.panel8.TabIndex = 5;
+            // 
+            // btnAddress
+            // 
+            this.btnAddress.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAddress.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddress.Image = global::GUI.Properties.Resources.address;
+            this.btnAddress.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddress.Location = new System.Drawing.Point(0, 0);
+            this.btnAddress.Name = "btnAddress";
+            this.btnAddress.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnAddress.Size = new System.Drawing.Size(170, 59);
+            this.btnAddress.TabIndex = 1;
+            this.btnAddress.Text = "&Địa Chỉ";
+            this.btnAddress.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAddress.UseVisualStyleBackColor = false;
+            this.btnAddress.Click += new System.EventHandler(this.btnAddress_Click);
             // 
             // panel7
             // 
@@ -106,6 +141,24 @@
             this.panel7.Size = new System.Drawing.Size(170, 59);
             this.panel7.TabIndex = 4;
             // 
+            // btnAccount
+            // 
+            this.btnAccount.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAccount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccount.Image = global::GUI.Properties.Resources.profile;
+            this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAccount.Location = new System.Drawing.Point(0, 0);
+            this.btnAccount.Name = "btnAccount";
+            this.btnAccount.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnAccount.Size = new System.Drawing.Size(170, 59);
+            this.btnAccount.TabIndex = 1;
+            this.btnAccount.Text = "Thông Tin Cá &Nhân";
+            this.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAccount.UseVisualStyleBackColor = false;
+            this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
+            // 
             // panel6
             // 
             this.panel6.Controls.Add(this.btnHistory);
@@ -114,6 +167,23 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(170, 59);
             this.panel6.TabIndex = 3;
+            // 
+            // btnHistory
+            // 
+            this.btnHistory.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHistory.Image = global::GUI.Properties.Resources.history;
+            this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHistory.Location = new System.Drawing.Point(0, 0);
+            this.btnHistory.Name = "btnHistory";
+            this.btnHistory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnHistory.Size = new System.Drawing.Size(170, 59);
+            this.btnHistory.TabIndex = 1;
+            this.btnHistory.Text = "&Lịch sử";
+            this.btnHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHistory.UseVisualStyleBackColor = false;
+            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // panel5
             // 
@@ -124,6 +194,23 @@
             this.panel5.Size = new System.Drawing.Size(170, 59);
             this.panel5.TabIndex = 2;
             // 
+            // btnCart
+            // 
+            this.btnCart.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCart.Image = global::GUI.Properties.Resources.cart1;
+            this.btnCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCart.Location = new System.Drawing.Point(0, 0);
+            this.btnCart.Name = "btnCart";
+            this.btnCart.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnCart.Size = new System.Drawing.Size(170, 59);
+            this.btnCart.TabIndex = 0;
+            this.btnCart.Text = "&Giỏ Hàng";
+            this.btnCart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCart.UseVisualStyleBackColor = false;
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.btnHome);
@@ -133,6 +220,25 @@
             this.panel4.Size = new System.Drawing.Size(170, 59);
             this.panel4.TabIndex = 1;
             // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(0, 0);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnHome.Size = new System.Drawing.Size(170, 59);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "&Trang Chủ";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.picLogo);
@@ -141,6 +247,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(170, 116);
             this.panel3.TabIndex = 0;
+            // 
+            // picLogo
+            // 
+            this.picLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picLogo.Image = global::GUI.Properties.Resources.logo_book;
+            this.picLogo.Location = new System.Drawing.Point(0, 0);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(170, 116);
+            this.picLogo.TabIndex = 0;
+            this.picLogo.TabStop = false;
             // 
             // panel2
             // 
@@ -152,15 +268,42 @@
             this.panel2.Size = new System.Drawing.Size(630, 470);
             this.panel2.TabIndex = 1;
             // 
+            // panel12
+            // 
+            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel12.Location = new System.Drawing.Point(0, 64);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(630, 406);
+            this.panel12.TabIndex = 1;
+            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel10.Controls.Add(this.label1);
+            this.panel10.Controls.Add(this.lblHeaderUser);
             this.panel10.Controls.Add(this.panel11);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(630, 64);
             this.panel10.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(123, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Xin Chào: ";
+            // 
+            // lblHeaderUser
+            // 
+            this.lblHeaderUser.AutoSize = true;
+            this.lblHeaderUser.Location = new System.Drawing.Point(123, 26);
+            this.lblHeaderUser.Name = "lblHeaderUser";
+            this.lblHeaderUser.Size = new System.Drawing.Size(0, 13);
+            this.lblHeaderUser.TabIndex = 1;
             // 
             // panel11
             // 
@@ -181,125 +324,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft YaHei", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Image = global::GUI.Properties.Resources.logout;
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.Location = new System.Drawing.Point(0, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnExit.Size = new System.Drawing.Size(170, 59);
-            this.btnExit.TabIndex = 1;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnExit.UseVisualStyleBackColor = false;
-            // 
-            // btnAddress
-            // 
-            this.btnAddress.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAddress.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddress.Image = global::GUI.Properties.Resources.address;
-            this.btnAddress.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddress.Location = new System.Drawing.Point(0, 0);
-            this.btnAddress.Name = "btnAddress";
-            this.btnAddress.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAddress.Size = new System.Drawing.Size(170, 59);
-            this.btnAddress.TabIndex = 1;
-            this.btnAddress.Text = "Địa Chỉ";
-            this.btnAddress.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAddress.UseVisualStyleBackColor = false;
-            this.btnAddress.Click += new System.EventHandler(this.btnAddress_Click);
-            // 
-            // btnAccount
-            // 
-            this.btnAccount.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAccount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccount.Image = global::GUI.Properties.Resources.profile;
-            this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccount.Location = new System.Drawing.Point(0, 0);
-            this.btnAccount.Name = "btnAccount";
-            this.btnAccount.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAccount.Size = new System.Drawing.Size(170, 59);
-            this.btnAccount.TabIndex = 1;
-            this.btnAccount.Text = "Thông Tin Cá Nhân";
-            this.btnAccount.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccount.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAccount.UseVisualStyleBackColor = false;
-            // 
-            // btnHistory
-            // 
-            this.btnHistory.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnHistory.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistory.Image = global::GUI.Properties.Resources.history;
-            this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistory.Location = new System.Drawing.Point(0, 0);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnHistory.Size = new System.Drawing.Size(170, 59);
-            this.btnHistory.TabIndex = 1;
-            this.btnHistory.Text = "Lịch sử";
-            this.btnHistory.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHistory.UseVisualStyleBackColor = false;
-            // 
-            // btnCart
-            // 
-            this.btnCart.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCart.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCart.Image = global::GUI.Properties.Resources.cart1;
-            this.btnCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCart.Location = new System.Drawing.Point(0, 0);
-            this.btnCart.Name = "btnCart";
-            this.btnCart.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnCart.Size = new System.Drawing.Size(170, 59);
-            this.btnCart.TabIndex = 0;
-            this.btnCart.Text = "Giỏ Hàng";
-            this.btnCart.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCart.UseVisualStyleBackColor = false;
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnHome.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 0);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnHome.Size = new System.Drawing.Size(170, 59);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "Trang Chủ";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHome.UseVisualStyleBackColor = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // picLogo
-            // 
-            this.picLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picLogo.Image = global::GUI.Properties.Resources.logo_book;
-            this.picLogo.Location = new System.Drawing.Point(0, 0);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(170, 116);
-            this.picLogo.TabIndex = 0;
-            this.picLogo.TabStop = false;
-            // 
-            // panel12
-            // 
-            this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(0, 64);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(630, 406);
-            this.panel12.TabIndex = 1;
-            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -317,11 +341,12 @@
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,5 +373,7 @@
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblHeaderUser;
     }
 }

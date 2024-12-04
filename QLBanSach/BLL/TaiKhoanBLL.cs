@@ -19,7 +19,7 @@ namespace BLL
             {
                 return "sukien_taikhoan";
             }
-            if(taiKhoan.Password == "")
+            if(taiKhoan.Pass == "")
             {
                 return "sukien_matkhau";
             }

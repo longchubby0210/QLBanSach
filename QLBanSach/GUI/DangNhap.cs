@@ -12,14 +12,13 @@ using System.Windows.Forms;
 using BLL;
 using DTO;
 using GUI.FormCustomer;
+using GUI.FormMaster;
 namespace GUI
 {
     public partial class DangNhap : Form
     {
-        
         public DangNhap()
         {
-           
             InitializeComponent();
             //Làm mất backgroud của lbl
             lblHeaderLogin.Parent = picLogin;
@@ -28,14 +27,13 @@ namespace GUI
             lblPassword.BackColor = Color.Transparent;
             lblUsername.Parent = picLogin;
             lblUsername.BackColor = Color.Transparent;
-            
             chkShowPass.Parent = picLogin;
             chkShowPass.BackColor = Color.Transparent;
             llblFogotPass.Parent = picLogin;
             llblFogotPass.BackColor = Color.Transparent;
-
         }
 
+        // sự kiện nuts đâng ký
         private void btnDegister_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -44,15 +42,17 @@ namespace GUI
            this.Show();
             
         }
+
         // sự kiện đăng nhập
         NguoiDung user = new NguoiDung();
         TaiKhoanBLL tkBLL = new TaiKhoanBLL();
+        
         private void btnLogin_Click(object sender, EventArgs e)
         {
             user.Username = txtUsername.Text;
-            user.Password = txtPassword.Text;
-
+            user.Pass = txtPassword.Text;
             string checkUser = tkBLL.CheckLogin(user);
+
             // check các sự kiện đăng nhập lấy từ BLL-TaiKhoanBLL
             switch (checkUser)
             {
@@ -72,11 +72,52 @@ namespace GUI
                         return;
                     }
             }
+
             MessageBox.Show("Chúc mừng bạn đã đăng nhập thành công");
+
             this.Hide();
-            TrangChu trangChu = new TrangChu();
-            trangChu.ShowDialog();
-            this.Show();  
+            int maQuyen = user.getMaQuyen();  // Lấy giá trị MaQuyen từ đối tượng user
+
+            if (maQuyen == 0)
+            {
+                // Nếu MaQuyen = 0, người dùng sẽ vào Trang Chủ
+                TrangChu trangChu = new TrangChu();
+                trangChu.Show();  // Hiển thị Trang Chủ
+                this.Hide();       // Ẩn form hiện tại nếu cần
+            }
+            else if (maQuyen == 1)
+            {
+                // Nếu MaQuyen = 1, người dùng sẽ vào trang Quản Trị
+                QuanTri quanTri = new QuanTri();
+                quanTri.Show();  // Hiển thị trang Quản Trị
+                this.Hide();     // Ẩn form hiện tại nếu cần
+            }
+            else
+            {
+                // Kiểm tra với các mã quyền khác nếu có
+                MessageBox.Show("Mã quyền không hợp lệ.");
+            }
+
+            /* switch (maQuyen) { 
+             case 0:
+                 {
+                     TrangChu trangChu = new TrangChu();
+                     trangChu.Show();
+                         break;
+                 }
+             case 1:
+                 {
+                      QuanTri quanTri = new QuanTri();
+                       quanTri.Show();
+                     break ;
+                 }
+             default:
+                 {
+                      MessageBox.Show("Mã quyền không hợp lệ!"); // Thông báo nếu mã quyền không hợp lệ
+                      this.Show(); // Hiện lại form hiện tại nếu cần
+                       break;
+                 }
+             }*/
         }
         // Hiển thị password khi click vào sự kiện hiện mật khẩu
         private void chkShowPass_CheckedChanged(object sender, EventArgs e)
