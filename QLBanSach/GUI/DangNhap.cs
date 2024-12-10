@@ -17,6 +17,8 @@ namespace GUI
 {
     public partial class DangNhap : Form
     {
+        private NguoiDung taiKhoan;
+        private TaiKhoanBLL taiKhoanBLL;
         public DangNhap()
         {
             InitializeComponent();
@@ -31,6 +33,7 @@ namespace GUI
             chkShowPass.BackColor = Color.Transparent;
             llblFogotPass.Parent = picLogin;
             llblFogotPass.BackColor = Color.Transparent;
+            
         }
 
         // sự kiện nuts đâng ký
@@ -46,17 +49,18 @@ namespace GUI
         // sự kiện đăng nhập
         NguoiDung user = new NguoiDung();
         TaiKhoanBLL tkBLL = new TaiKhoanBLL();
-        
+        Info_Account_MngBLL info_Account = new Info_Account_MngBLL();
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            
             user.Username = txtUsername.Text;
             user.Pass = txtPassword.Text;
             string checkUser = tkBLL.CheckLogin(user);
-
+            
             // check các sự kiện đăng nhập lấy từ BLL-TaiKhoanBLL
             switch (checkUser)
             {
-                case "sukien_taikhoan" :
+                case "sukien_taikhoan":
                     {
                         MessageBox.Show("Tài khoản không được để trống!");
                         return;
@@ -82,42 +86,21 @@ namespace GUI
             {
                 // Nếu MaQuyen = 0, người dùng sẽ vào Trang Chủ
                 TrangChu trangChu = new TrangChu();
-                trangChu.Show();  // Hiển thị Trang Chủ
-                this.Hide();       // Ẩn form hiện tại nếu cần
+                trangChu.Show();  
+                this.Hide();       
             }
             else if (maQuyen == 1)
             {
                 // Nếu MaQuyen = 1, người dùng sẽ vào trang Quản Trị
-                QuanTri quanTri = new QuanTri();
-                quanTri.Show();  // Hiển thị trang Quản Trị
-                this.Hide();     // Ẩn form hiện tại nếu cần
+                QuanTri quanTri = new QuanTri(user);
+                quanTri.Show();  
+                this.Hide();     
             }
             else
             {
                 // Kiểm tra với các mã quyền khác nếu có
                 MessageBox.Show("Mã quyền không hợp lệ.");
             }
-
-            /* switch (maQuyen) { 
-             case 0:
-                 {
-                     TrangChu trangChu = new TrangChu();
-                     trangChu.Show();
-                         break;
-                 }
-             case 1:
-                 {
-                      QuanTri quanTri = new QuanTri();
-                       quanTri.Show();
-                     break ;
-                 }
-             default:
-                 {
-                      MessageBox.Show("Mã quyền không hợp lệ!"); // Thông báo nếu mã quyền không hợp lệ
-                      this.Show(); // Hiện lại form hiện tại nếu cần
-                       break;
-                 }
-             }*/
         }
         // Hiển thị password khi click vào sự kiện hiện mật khẩu
         private void chkShowPass_CheckedChanged(object sender, EventArgs e)
@@ -137,6 +120,9 @@ namespace GUI
             MessageBox.Show("Chúc mừng bạn đã quay vào ô mất tài khoản -.-\n XIN CHIA BUỒN");
         }
 
-        
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

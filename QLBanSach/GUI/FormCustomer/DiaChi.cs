@@ -16,5 +16,10 @@ namespace GUI.FormCustomer
         {
             InitializeComponent();
         }
+
+        private void DiaChi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

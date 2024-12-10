@@ -42,6 +42,7 @@ namespace GUI
             this.panelLogin = new System.Windows.Forms.Panel();
             this.picLoginAvt = new System.Windows.Forms.PictureBox();
             this.picLogin = new System.Windows.Forms.PictureBox();
+            this.btn_Exit = new System.Windows.Forms.Button();
             this.panelLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLoginAvt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogin)).BeginInit();
@@ -56,7 +57,7 @@ namespace GUI
             this.lblUsername.Location = new System.Drawing.Point(283, 140);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(111, 24);
-            this.lblUsername.TabIndex = 0;
+            this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "Username:";
             // 
             // lblPassword
@@ -68,7 +69,7 @@ namespace GUI
             this.lblPassword.Location = new System.Drawing.Point(283, 189);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(112, 24);
-            this.lblPassword.TabIndex = 1;
+            this.lblPassword.TabIndex = 4;
             this.lblPassword.Text = "Password :";
             // 
             // txtUsername
@@ -86,7 +87,7 @@ namespace GUI
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(168, 26);
-            this.txtPassword.TabIndex = 4;
+            this.txtPassword.TabIndex = 5;
             // 
             // btnDegister
             // 
@@ -94,7 +95,7 @@ namespace GUI
             this.btnDegister.Location = new System.Drawing.Point(307, 275);
             this.btnDegister.Name = "btnDegister";
             this.btnDegister.Size = new System.Drawing.Size(87, 28);
-            this.btnDegister.TabIndex = 5;
+            this.btnDegister.TabIndex = 7;
             this.btnDegister.Text = "Đăng Ký";
             this.btnDegister.UseVisualStyleBackColor = true;
             this.btnDegister.Click += new System.EventHandler(this.btnDegister_Click);
@@ -105,7 +106,7 @@ namespace GUI
             this.btnLogin.Location = new System.Drawing.Point(456, 275);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(98, 28);
-            this.btnLogin.TabIndex = 6;
+            this.btnLogin.TabIndex = 8;
             this.btnLogin.Text = "Đăng Nhập";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -119,7 +120,7 @@ namespace GUI
             this.lblHeaderLogin.Location = new System.Drawing.Point(155, 32);
             this.lblHeaderLogin.Name = "lblHeaderLogin";
             this.lblHeaderLogin.Size = new System.Drawing.Size(388, 29);
-            this.lblHeaderLogin.TabIndex = 8;
+            this.lblHeaderLogin.TabIndex = 0;
             this.lblHeaderLogin.Text = "Welcome to Book Store Group 4";
             // 
             // chkShowPass
@@ -129,7 +130,7 @@ namespace GUI
             this.chkShowPass.Location = new System.Drawing.Point(418, 233);
             this.chkShowPass.Name = "chkShowPass";
             this.chkShowPass.Size = new System.Drawing.Size(149, 22);
-            this.chkShowPass.TabIndex = 9;
+            this.chkShowPass.TabIndex = 6;
             this.chkShowPass.Text = "Show Password";
             this.chkShowPass.UseVisualStyleBackColor = true;
             this.chkShowPass.CheckedChanged += new System.EventHandler(this.chkShowPass_CheckedChanged);
@@ -142,7 +143,7 @@ namespace GUI
             this.llblFogotPass.Location = new System.Drawing.Point(351, 332);
             this.llblFogotPass.Name = "llblFogotPass";
             this.llblFogotPass.Size = new System.Drawing.Size(161, 22);
-            this.llblFogotPass.TabIndex = 10;
+            this.llblFogotPass.TabIndex = 9;
             this.llblFogotPass.TabStop = true;
             this.llblFogotPass.Text = "Forgot Password";
             this.llblFogotPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblFogotPass_LinkClicked);
@@ -153,7 +154,7 @@ namespace GUI
             this.panelLogin.Location = new System.Drawing.Point(21, 150);
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(242, 153);
-            this.panelLogin.TabIndex = 11;
+            this.panelLogin.TabIndex = 1;
             // 
             // picLoginAvt
             // 
@@ -175,11 +176,23 @@ namespace GUI
             this.picLogin.TabIndex = 7;
             this.picLogin.TabStop = false;
             // 
+            // btn_Exit
+            // 
+            this.btn_Exit.BackColor = System.Drawing.Color.Brown;
+            this.btn_Exit.Location = new System.Drawing.Point(675, 0);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(59, 39);
+            this.btn_Exit.TabIndex = 10;
+            this.btn_Exit.Text = "Exit";
+            this.btn_Exit.UseVisualStyleBackColor = false;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
             // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 411);
+            this.Controls.Add(this.btn_Exit);
             this.Controls.Add(this.panelLogin);
             this.Controls.Add(this.llblFogotPass);
             this.Controls.Add(this.chkShowPass);
@@ -218,5 +231,6 @@ namespace GUI
         private System.Windows.Forms.LinkLabel llblFogotPass;
         private System.Windows.Forms.Panel panelLogin;
         private System.Windows.Forms.PictureBox picLoginAvt;
+        private System.Windows.Forms.Button btn_Exit;
     }
 }

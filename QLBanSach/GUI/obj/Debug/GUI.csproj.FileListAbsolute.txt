@@ -19,3 +19,11 @@ C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.DangKy.resources
 C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormCustomer.TrangChu.resources
 C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormCustomer.DiaChi.resources
 C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormMaster.QuanTri.resources
+C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormCustomer.GioHang.resources
+C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormCustomer.Home.resources
+C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormCustomer.LichSu.resources
+C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormCustomer.ThongTinCaNhan.resources
+C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormMaster.QuanLyHoaDon.resources
+C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormMaster.QuanLyNguoiDung.resources
+C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormMaster.QuanLySach.resources
+C:\Users\User\source\repos\QLBanSach\GUI\obj\Debug\GUI.FormMaster.ThongTinTaiKhoan.resources

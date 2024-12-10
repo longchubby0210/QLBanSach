@@ -29,61 +29,136 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.picbImageDiaChi = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDiaChi = new System.Windows.Forms.Label();
+            this.lblTTDiaChi = new System.Windows.Forms.Label();
+            this.lblSoDienThoai = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.lblTTSoDienThoai = new System.Windows.Forms.Label();
+            this.lblThongTinCuaHang = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picbImageDiaChi)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(37, 41);
+            this.panel1.Controls.Add(this.picbImageDiaChi);
+            this.panel1.Location = new System.Drawing.Point(49, 50);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 158);
+            this.panel1.Size = new System.Drawing.Size(267, 194);
             this.panel1.TabIndex = 0;
+            // 
+            // picbImageDiaChi
+            // 
+            this.picbImageDiaChi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picbImageDiaChi.Image = global::GUI.Properties.Resources.bookstore;
+            this.picbImageDiaChi.Location = new System.Drawing.Point(0, 0);
+            this.picbImageDiaChi.Margin = new System.Windows.Forms.Padding(4);
+            this.picbImageDiaChi.Name = "picbImageDiaChi";
+            this.picbImageDiaChi.Size = new System.Drawing.Size(267, 194);
+            this.picbImageDiaChi.TabIndex = 0;
+            this.picbImageDiaChi.TabStop = false;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(279, 61);
+            this.panel2.Controls.Add(this.lblTTSoDienThoai);
+            this.panel2.Controls.Add(this.lblSoDienThoai);
+            this.panel2.Controls.Add(this.lblTTDiaChi);
+            this.panel2.Controls.Add(this.lblDiaChi);
+            this.panel2.Location = new System.Drawing.Point(367, 107);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(162, 111);
+            this.panel2.Size = new System.Drawing.Size(518, 137);
             this.panel2.TabIndex = 1;
             // 
-            // pictureBox1
+            // lblDiaChi
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 158);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lblDiaChi.AutoSize = true;
+            this.lblDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiaChi.Location = new System.Drawing.Point(14, 25);
+            this.lblDiaChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDiaChi.Name = "lblDiaChi";
+            this.lblDiaChi.Size = new System.Drawing.Size(80, 22);
+            this.lblDiaChi.TabIndex = 0;
+            this.lblDiaChi.Text = "Địa chỉ : ";
             // 
-            // label1
+            // lblTTDiaChi
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(20, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ảo";
+            this.lblTTDiaChi.AutoSize = true;
+            this.lblTTDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTTDiaChi.Location = new System.Drawing.Point(111, 25);
+            this.lblTTDiaChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTTDiaChi.Name = "lblTTDiaChi";
+            this.lblTTDiaChi.Size = new System.Drawing.Size(341, 22);
+            this.lblTTDiaChi.TabIndex = 1;
+            this.lblTTDiaChi.Text = "Ngách 32/43 An Dương , Tây Hồ , Hà Nội";
+            // 
+            // lblSoDienThoai
+            // 
+            this.lblSoDienThoai.AutoSize = true;
+            this.lblSoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoDienThoai.Location = new System.Drawing.Point(14, 76);
+            this.lblSoDienThoai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSoDienThoai.Name = "lblSoDienThoai";
+            this.lblSoDienThoai.Size = new System.Drawing.Size(135, 22);
+            this.lblSoDienThoai.TabIndex = 2;
+            this.lblSoDienThoai.Text = "Số Điện Thoại :";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.lblThongTinCuaHang);
+            this.panel3.Location = new System.Drawing.Point(367, 50);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(518, 59);
+            this.panel3.TabIndex = 2;
+            // 
+            // lblTTSoDienThoai
+            // 
+            this.lblTTSoDienThoai.AutoSize = true;
+            this.lblTTSoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTTSoDienThoai.Location = new System.Drawing.Point(188, 76);
+            this.lblTTSoDienThoai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTTSoDienThoai.Name = "lblTTSoDienThoai";
+            this.lblTTSoDienThoai.Size = new System.Drawing.Size(110, 22);
+            this.lblTTSoDienThoai.TabIndex = 3;
+            this.lblTTSoDienThoai.Text = "0789789789";
+            // 
+            // lblThongTinCuaHang
+            // 
+            this.lblThongTinCuaHang.AutoSize = true;
+            this.lblThongTinCuaHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThongTinCuaHang.Location = new System.Drawing.Point(123, 14);
+            this.lblThongTinCuaHang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblThongTinCuaHang.Name = "lblThongTinCuaHang";
+            this.lblThongTinCuaHang.Size = new System.Drawing.Size(254, 29);
+            this.lblThongTinCuaHang.TabIndex = 1;
+            this.lblThongTinCuaHang.Text = "Thông Tin Cửa Hàng";
+            this.lblThongTinCuaHang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DiaChi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 239);
+            this.ClientSize = new System.Drawing.Size(943, 359);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DiaChi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "DiaChi";
+            this.Load += new System.EventHandler(this.DiaChi_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picbImageDiaChi)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -91,8 +166,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picbImageDiaChi;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblDiaChi;
+        private System.Windows.Forms.Label lblTTDiaChi;
+        private System.Windows.Forms.Label lblSoDienThoai;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label lblTTSoDienThoai;
+        private System.Windows.Forms.Label lblThongTinCuaHang;
     }
 }

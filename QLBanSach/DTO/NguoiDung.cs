@@ -9,28 +9,29 @@ namespace DTO
 {
     public class NguoiDung
     {
-        public int MaND {  get; set; }
-        public string Username {  get; set; }
+        public int MaND { get; set; }
+        public string Username { get; set; }
         public string Pass { get; set; }
+        public int MaQuyen { get; set; }
         public string HoVaTen { get; set; }
         public DateTime NamSinh { get; set; }
-        public string GioiTinh {  get; set; }
-        public string DiaChi {  get; set; }
+        public string GioiTinh { get; set; }
+        public string DiaChi { get; set; }
         public string SoDienThoai { get; set; }
-        public int MaQuyen {  get; set; }
         public NguoiDung() { }
 
-        public NguoiDung(int maND, string username, string pass, string hoVaTen, DateTime namSinh, string gioiTinh, string diaChi, string soDienThoai, int maQuyen)
+        public NguoiDung(int maND, string username, string pass, int maQuyen, string hoVaTen, DateTime namSinh, string gioiTinh, string diaChi, string soDienThoai)
         {
             this.MaND = maND;
             this.Username = username;
             this.Pass = pass;
+            this.MaQuyen = maQuyen;
             this.HoVaTen = hoVaTen;
             this.NamSinh = namSinh;
             this.GioiTinh = gioiTinh;
             this.DiaChi = diaChi;
             this.SoDienThoai = soDienThoai;
-            this.MaQuyen = maQuyen;
+            
         }
 
 

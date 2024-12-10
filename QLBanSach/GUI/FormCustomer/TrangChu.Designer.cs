@@ -51,6 +51,7 @@
             this.lblHeaderUser = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_Exit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -78,7 +79,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(170, 470);
+            this.panel1.Size = new System.Drawing.Size(170, 481);
             this.panel1.TabIndex = 0;
             // 
             // panel9
@@ -265,27 +266,29 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(170, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(630, 470);
+            this.panel2.Size = new System.Drawing.Size(825, 481);
             this.panel2.TabIndex = 1;
             // 
             // panel12
             // 
+            this.panel12.AutoSize = true;
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel12.Location = new System.Drawing.Point(0, 64);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(630, 406);
+            this.panel12.Size = new System.Drawing.Size(825, 417);
             this.panel12.TabIndex = 1;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel10.Controls.Add(this.btn_Exit);
             this.panel10.Controls.Add(this.label1);
             this.panel10.Controls.Add(this.lblHeaderUser);
             this.panel10.Controls.Add(this.panel11);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 0);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(630, 64);
+            this.panel10.Size = new System.Drawing.Size(825, 64);
             this.panel10.TabIndex = 0;
             // 
             // label1
@@ -324,14 +327,28 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_Exit
+            // 
+            this.btn_Exit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Exit.BackColor = System.Drawing.Color.Crimson;
+            this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Exit.Location = new System.Drawing.Point(750, 0);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(75, 33);
+            this.btn_Exit.TabIndex = 3;
+            this.btn_Exit.Text = "Exit";
+            this.btn_Exit.UseVisualStyleBackColor = false;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
+            // 
             // TrangChu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 470);
+            this.ClientSize = new System.Drawing.Size(995, 481);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "TrangChu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TrangChu";
             this.panel1.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -343,6 +360,7 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
@@ -375,5 +393,6 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblHeaderUser;
+        private System.Windows.Forms.Button btn_Exit;
     }
 }

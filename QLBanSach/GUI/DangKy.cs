@@ -73,7 +73,9 @@ namespace GUI
                         MessageBoxIcon.Question);
                             if(result == DialogResult.Yes)
                             {
-                                this.Close();
+                                Close();
+                                DangNhap dangNhap = new DangNhap();
+                                dangNhap.Show();
                             }
                                 
                         return;

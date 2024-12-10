@@ -57,5 +57,19 @@ namespace GUI.FormCustomer
         {
             OpenChillForm(new ThongTinCaNhan());
         }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            DialogResult rs = MessageBox.Show("Bạn có muốn trở về trang đăng nhập không?",
+                "Hộp thoại",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+            if (rs == DialogResult.Yes)
+            {
+                Close();
+                DangNhap dangNhap = new DangNhap();
+                dangNhap.Show();
+            }
+        }
     }
 }
