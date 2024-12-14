@@ -16,5 +16,12 @@ namespace GUI.FormMaster
         {
             InitializeComponent();
         }
+
+        private void QuanLyHoaDon_Load(object sender, EventArgs e)
+        {
+
+           
+            this.reportViewer1.RefreshReport();
+        }
     }
 }

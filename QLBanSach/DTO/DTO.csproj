@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HoaDon.cs" />
+    <Compile Include="LoaiSach.cs" />
     <Compile Include="NguoiDung.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuyenHan.cs" />

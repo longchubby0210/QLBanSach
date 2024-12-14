@@ -36,18 +36,6 @@ namespace BLL
             return userMng.TimKiemUsers(HoTen);
         }
         // hiển thị người dùng BLL
-        //public List<NguoiDung> HienThiDuLieuUser()
-        //{
-        //    try
-        //    {
-        //        return userMng.DocDuLieuUser();
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        //trả về danh sách rỗng
-        //        return new List<NguoiDung>();
-        //    }
-        //}
         public DataTable HienThiDuLieuUser()
         {
             try
@@ -67,12 +55,13 @@ namespace BLL
             {
                 return "newUser_null_error"; 
             }
-            // Kiểm tra nếu Username là null hoặc rỗng
+            // kiểm tra xem thông tin đã được nhập vào hay chưa
             if (newUser.Username == "" || 
                 newUser.Pass == "" || 
                 newUser.HoVaTen == "" || 
                 newUser.DiaChi == "" ||
-                newUser.SoDienThoai == "") return "name_error";
+                newUser.SoDienThoai == "") 
+                return "name_error";
             UserMng newUserMng = new UserMng();
             string Add_OK = newUserMng.ThemNguoiDung(newUser);
             return Add_OK;
@@ -88,29 +77,23 @@ namespace BLL
             string Edit_OK = editUserMng.SuaTTNguoiDung(editUser);
             return Edit_OK;
         }
-        public string XoaTTNguoiDung(NguoiDung deleteUser)
+        public string XoaTTNguoiDung(string deleteUser)
         {
             if (deleteUser == null)
             {
                 return "delete_error_null";
             }
-            UserMng deleteUserMng = new UserMng();
-
-            string Delete_OK = deleteUserMng.XoaTTNguoiDung(deleteUser);
-            return Delete_OK;
+            try
+            {
+                return userMng.XoaTTNguoiDung(deleteUser);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Lỗi trong quá trình xóa người dùng: " + ex.Message);
+            }
+            
         }
-        //public DataTable XoaTTNguoiDung(NguoiDung deleteUser)
-        //{
-        //    UserMng deleteUserMng = new UserMng();
-        //    try
-        //    {
-        //        return userMng.XoaTTNguoiDung();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return null;
-        //    }
-        //}
+        
     }
     
 }

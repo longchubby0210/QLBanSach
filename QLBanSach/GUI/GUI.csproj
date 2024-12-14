@@ -33,6 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -100,6 +118,12 @@
     <Compile Include="FormMaster\QuanLyHoaDon.Designer.cs">
       <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMaster\QuanLyLoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaster\QuanLyLoaiSach.Designer.cs">
+      <DependentUpon>QuanLyLoaiSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMaster\QuanLyNguoiDung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +135,12 @@
     </Compile>
     <Compile Include="FormMaster\QuanLySach.Designer.cs">
       <DependentUpon>QuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaster\QuanLySacsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaster\QuanLySacsh.Designer.cs">
+      <DependentUpon>QuanLySacsh.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMaster\QuanTri.cs">
       <SubType>Form</SubType>
@@ -126,6 +156,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,11 +184,17 @@
     <EmbeddedResource Include="FormMaster\QuanLyHoaDon.resx">
       <DependentUpon>QuanLyHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMaster\QuanLyLoaiSach.resx">
+      <DependentUpon>QuanLyLoaiSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMaster\QuanLyNguoiDung.resx">
       <DependentUpon>QuanLyNguoiDung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMaster\QuanLySach.resx">
       <DependentUpon>QuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMaster\QuanLySacsh.resx">
+      <DependentUpon>QuanLySacsh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMaster\QuanTri.resx">
       <DependentUpon>QuanTri.cs</DependentUpon>
@@ -175,6 +212,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -204,10 +242,7 @@
   <ItemGroup>
     <None Include="Resources\book_login.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Image\Book\" />
-    <Folder Include="Image\Logo\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\cart1.png" />
   </ItemGroup>
@@ -261,6 +296,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bookstore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\conan.jpg" />
+    <Content Include="Image\doremon.jpg" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\default.bmp" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

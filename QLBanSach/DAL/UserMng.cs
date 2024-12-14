@@ -14,48 +14,6 @@ namespace DAL
         private List<NguoiDung> Users = new List<NguoiDung>();
         public NguoiDung taikhoan;
         
-        //public List<NguoiDung> DocDuLieuUser() 
-        //{
-        //    try
-        //    {
-
-        //        SqlConnectDatabase db = new SqlConnectDatabase();
-        //        db.MoKetNoi();
-        //        //đối tượng truy vấn
-        //        SqlCommand cmd = new SqlCommand();
-        //        cmd.CommandType = System.Data.CommandType.Text;
-        //        cmd.CommandText = "select * from tbl_NguoiDung";
-
-        //        //gan vao csdl
-        //        cmd.Connection = db.sqlCon;
-
-        //        //thực thi truy vấn
-        //        SqlDataReader reader = cmd.ExecuteReader();
-        //        while (reader.Read())
-        //        {
-        //            NguoiDung user = new NguoiDung
-        //            {
-        //                MaND = reader.GetInt32(0),
-        //                Username = reader.GetString(1),
-        //                Pass = reader.GetString(2),
-        //                MaQuyen = reader.GetInt32(3),
-        //                HoVaTen = reader.GetString(4),
-        //                NamSinh = reader.GetDateTime(5),
-        //                GioiTinh = reader.GetString(6),
-        //                DiaChi = reader.GetString(7),
-        //                SoDienThoai = reader.GetString(8)
-        //            };
-        //            Users.Add(user);
-        //        }
-        //        db.DongKetNoi();
-        //        reader.Close();
-        //    }
-        //    catch(SqlException ex)
-        //    {
-        //        Console.WriteLine($"Lỗi cơ sở dữ liệu:" + ex.Message);
-        //    }
-        //    return Users;
-        //}
         public DataTable DocDuLieuUser()
         {
             SqlConnectDatabase db = new SqlConnectDatabase();
@@ -71,21 +29,25 @@ namespace DAL
         public DataTable TimKiemUser(string username)
         {
             DataTable dataTable = new DataTable();
-            try
-            {
+            
                 SqlConnectDatabase db = new SqlConnectDatabase();
                 db.MoKetNoi();
                 SqlConnection sqlCon = db.sqlCon;
                 string sql = "select * from tbl_NguoiDung where Username = @Username";
                 SqlCommand cmd = new SqlCommand(sql, sqlCon);
+            try
+            {
                 cmd.Parameters.AddWithValue("@Username", username);
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-
                 adapter.Fill(dataTable);
             }
             catch (SqlException ex)
             {
                 Console.WriteLine($"Lỗi :" + ex.Message);
+            }
+            finally
+            {
+                db.DongKetNoi();
             }
             return dataTable;
         }
@@ -110,7 +72,7 @@ namespace DAL
             return dataTable ;
         }   
 
-        //Suwj kien them usser
+        //Su kien them usser
         public string ThemNguoiDung(NguoiDung newUser)
         {
             //Ket noi csdl
@@ -140,6 +102,7 @@ namespace DAL
             }
             finally 
             {
+                // đóng kết nối
                 db.DongKetNoi();
             }
             if(kq > 0)
@@ -151,6 +114,7 @@ namespace DAL
         }
         public string SuaTTNguoiDung(NguoiDung editUser)
         {
+            //Ket noi csdl
             SqlConnectDatabase db = new SqlConnectDatabase();
             db.MoKetNoi();
             
@@ -159,6 +123,7 @@ namespace DAL
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.CommandText = "proc_EditUser";
             int kq = 0;
+            // Truyền tham số vào
             try
             {
                 cmd.Parameters.AddWithValue("@user", editUser.getUsername());
@@ -169,6 +134,7 @@ namespace DAL
                 cmd.Parameters.AddWithValue("@namSinh", editUser.getNamSinh());
                 cmd.Parameters.AddWithValue("@diaChi", editUser.getDiaChi());
                 cmd.Parameters.AddWithValue("@soDienThoai", editUser.getSoDienThoai());
+               // thực thi
                 kq = cmd.ExecuteNonQuery();
             }
             catch(SqlException ex) 
@@ -177,6 +143,7 @@ namespace DAL
             }
             finally
             {
+                // đóng kết nối
                 db.DongKetNoi();
             }
             if(kq > 0)
@@ -186,12 +153,11 @@ namespace DAL
             }
             return "error_Edit_Success";
         }
-        public string XoaTTNguoiDung(NguoiDung deleteUser)
+        public string XoaTTNguoiDung(string deleteUser)
         {
-            // kết nối cơ sở dữ liệu
+            //kết nối csdl
             SqlConnectDatabase db = new SqlConnectDatabase();
             db.MoKetNoi();
-
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = db.sqlCon;
             cmd.CommandType = CommandType.StoredProcedure;
@@ -199,7 +165,9 @@ namespace DAL
             int kq = 0;
             try
             {
-                cmd.Parameters.AddWithValue("@user", deleteUser.getUsername());
+                //Truyền tham số vào
+                cmd.Parameters.AddWithValue("@user", deleteUser);
+                //Thực thi thủ tục
                 kq = cmd.ExecuteNonQuery();
             }
             catch (SqlException ex)
@@ -208,34 +176,14 @@ namespace DAL
             }
             finally
             {
+                // đóng kết nối
                 db.DongKetNoi();
             }
             if (kq > 0)
             {
-                this.Users.Remove(deleteUser);
                 return "delete_Success";
             }
-            
-            Console.WriteLine($"Số dòng bị xóa: {kq}");
-            Console.WriteLine(deleteUser.getMaND());
-            Console.WriteLine($"Số dòng bị ảnh hưởng: {kq}");
             return "error_Delete_Success";
         }
-        //public DataTable XoaTTNguoiDung()
-        //{
-        //    //kết nối cơ sở dữ liệu
-        //    SqlConnectDatabase db = new SqlConnectDatabase();
-        //    db.MoKetNoi();
-        //    SqlConnection sqlConn = db.sqlCon;
-
-        //    //đối tượng truy vấn
-        //    string sql = "proc_DeleteUser";
-        //    SqlDataAdapter adapter = new SqlDataAdapter(sql, sqlConn);
-        //    DataTable dt = new DataTable();
-        //    adapter.Fill(dt);
-        //    return dt;
-        //}
-
     }
-
 }

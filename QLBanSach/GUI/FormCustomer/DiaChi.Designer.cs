@@ -31,11 +31,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.picbImageDiaChi = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.lblDiaChi = new System.Windows.Forms.Label();
-            this.lblTTDiaChi = new System.Windows.Forms.Label();
-            this.lblSoDienThoai = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.lblTTSoDienThoai = new System.Windows.Forms.Label();
+            this.lblSoDienThoai = new System.Windows.Forms.Label();
+            this.lblTTDiaChi = new System.Windows.Forms.Label();
+            this.lblDiaChi = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.lblThongTinCuaHang = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picbImageDiaChi)).BeginInit();
@@ -75,27 +75,16 @@
             this.panel2.Size = new System.Drawing.Size(518, 137);
             this.panel2.TabIndex = 1;
             // 
-            // lblDiaChi
+            // lblTTSoDienThoai
             // 
-            this.lblDiaChi.AutoSize = true;
-            this.lblDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiaChi.Location = new System.Drawing.Point(14, 25);
-            this.lblDiaChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblDiaChi.Name = "lblDiaChi";
-            this.lblDiaChi.Size = new System.Drawing.Size(80, 22);
-            this.lblDiaChi.TabIndex = 0;
-            this.lblDiaChi.Text = "Địa chỉ : ";
-            // 
-            // lblTTDiaChi
-            // 
-            this.lblTTDiaChi.AutoSize = true;
-            this.lblTTDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTTDiaChi.Location = new System.Drawing.Point(111, 25);
-            this.lblTTDiaChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTTDiaChi.Name = "lblTTDiaChi";
-            this.lblTTDiaChi.Size = new System.Drawing.Size(341, 22);
-            this.lblTTDiaChi.TabIndex = 1;
-            this.lblTTDiaChi.Text = "Ngách 32/43 An Dương , Tây Hồ , Hà Nội";
+            this.lblTTSoDienThoai.AutoSize = true;
+            this.lblTTSoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTTSoDienThoai.Location = new System.Drawing.Point(188, 76);
+            this.lblTTSoDienThoai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTTSoDienThoai.Name = "lblTTSoDienThoai";
+            this.lblTTSoDienThoai.Size = new System.Drawing.Size(110, 22);
+            this.lblTTSoDienThoai.TabIndex = 3;
+            this.lblTTSoDienThoai.Text = "0789789789";
             // 
             // lblSoDienThoai
             // 
@@ -108,6 +97,28 @@
             this.lblSoDienThoai.TabIndex = 2;
             this.lblSoDienThoai.Text = "Số Điện Thoại :";
             // 
+            // lblTTDiaChi
+            // 
+            this.lblTTDiaChi.AutoSize = true;
+            this.lblTTDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTTDiaChi.Location = new System.Drawing.Point(111, 25);
+            this.lblTTDiaChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTTDiaChi.Name = "lblTTDiaChi";
+            this.lblTTDiaChi.Size = new System.Drawing.Size(341, 22);
+            this.lblTTDiaChi.TabIndex = 1;
+            this.lblTTDiaChi.Text = "Ngách 32/43 An Dương , Tây Hồ , Hà Nội";
+            // 
+            // lblDiaChi
+            // 
+            this.lblDiaChi.AutoSize = true;
+            this.lblDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDiaChi.Location = new System.Drawing.Point(14, 25);
+            this.lblDiaChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDiaChi.Name = "lblDiaChi";
+            this.lblDiaChi.Size = new System.Drawing.Size(80, 22);
+            this.lblDiaChi.TabIndex = 0;
+            this.lblDiaChi.Text = "Địa chỉ : ";
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.lblThongTinCuaHang);
@@ -115,17 +126,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(518, 59);
             this.panel3.TabIndex = 2;
-            // 
-            // lblTTSoDienThoai
-            // 
-            this.lblTTSoDienThoai.AutoSize = true;
-            this.lblTTSoDienThoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTTSoDienThoai.Location = new System.Drawing.Point(188, 76);
-            this.lblTTSoDienThoai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblTTSoDienThoai.Name = "lblTTSoDienThoai";
-            this.lblTTSoDienThoai.Size = new System.Drawing.Size(110, 22);
-            this.lblTTSoDienThoai.TabIndex = 3;
-            this.lblTTSoDienThoai.Text = "0789789789";
             // 
             // lblThongTinCuaHang
             // 
@@ -151,7 +151,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DiaChi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "DiaChi";
+            this.Text = "Địa Chỉ ";
             this.Load += new System.EventHandler(this.DiaChi_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picbImageDiaChi)).EndInit();

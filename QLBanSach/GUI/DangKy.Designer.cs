@@ -274,7 +274,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DangKy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DangKy";
+            this.Text = "Đăng Ký Tài Khoản";
+            this.Load += new System.EventHandler(this.DangKy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBackRegister)).EndInit();
             this.grbRegister.ResumeLayout(false);
             this.grbRegister.PerformLayout();

@@ -189,6 +189,7 @@ namespace GUI
             // 
             // DangNhap
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(734, 411);
@@ -208,7 +209,7 @@ namespace GUI
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "DangNhap";
+            this.Text = "Đăng Nhập";
             this.panelLogin.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLoginAvt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogin)).EndInit();

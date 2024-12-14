@@ -112,5 +112,10 @@ namespace GUI
             txtDiaChi.Clear();
             txtSoDienThoai.Clear();
         }
+
+        private void DangKy_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
